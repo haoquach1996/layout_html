@@ -1,0 +1,39 @@
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    .content_menu {
+        flex-flow: column;
+        width: 100%;
+        float: left;
+    }
+
+    .content_item_col {
+        width: 100%;
+        float: left;
+        padding: 12px 24px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .m-hide {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .s-hide {
+        display: none !important;
+    }
+
+    .contact_btn {
+        align-self: center;
+        width: 100%;
+    }
+
+}

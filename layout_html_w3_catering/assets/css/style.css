@@ -1,0 +1,233 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Times New Roman", Georgia, Serif;
+    line-height: 1.5;
+}
+
+
+
+/* Common */
+
+.btn {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    max-width: 100%;
+    min-width: 50px;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.text-heading {
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.flex-1 {
+    flex: 1;
+    margin: 15px 0;
+}
+
+hr {
+    margin: 20px 0;
+    opacity: 0.2;
+    box-sizing: content-box;
+    width: 1100px;
+    max-width: 100%;
+}
+
+/* Main css */
+
+#header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 8px 16px;
+    letter-spacing: 4px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+#header .header_right {
+    display: flex;
+}
+
+#slider {
+    position: relative;
+    background: url('../img/hamburger.jpeg') top center / cover no-repeat;
+    margin-top: 54px;
+    padding-top: 50%;
+}
+
+#slider .slider_text {
+    position: absolute;
+    font-size: 36px;
+    padding: 12px 24px;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+#content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.content_item {
+    display: flex;
+    padding: 64px 0;
+    max-width: 1100px;
+    
+}
+
+.content_item_col {
+    display: flex;
+    padding: 64px 16px;
+    flex-flow: column;
+    max-width: 1100px;
+}
+
+.content_left,
+.content_right {
+    flex: 1;
+    padding: 12px 24px;
+    display: flex;
+    flex-flow: column;
+}
+
+.content_img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    opacity: 0.75;
+}
+
+.about_heading {
+    flex: 1.5;
+}
+
+.about_subhead {
+    flex: .5;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.about_dcs,
+.about_body {
+    flex: 3;
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+.about_tag {
+    padding: 0 8px;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.about_dcs {
+    opacity: 0.5;
+}
+
+.menu_item {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-flow: column; 
+}
+
+.item_heading {
+    margin-top: 22px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.item_dcs {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #757575;
+    font-size: 15px;
+}
+
+.contact_address {
+    font-weight: bolder;
+    color: #607d8b;
+    font-size: 18px;
+    margin: 10px 0 !important;
+}
+
+.contact_input {
+    padding: 16px 8px;
+    margin: 15px 0;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    font-size: 13px;
+
+}
+
+.contact_btn {
+    margin: 15px 0;
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    font-size: 13px;
+    padding: 12px 16px;
+
+}
+
+#footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 32px 0;
+}
+
+#footer p {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#footer a {
+    color: #000;
+}
+
+#footer a:hover {
+    color: #4CAF50;
+}
+
