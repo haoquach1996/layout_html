@@ -15,6 +15,10 @@
     opacity: 1;
 }
 
+.text-inline {
+    display: inline-block;
+}
+
 .pt-24 {
     padding-top: 24px;
 }
