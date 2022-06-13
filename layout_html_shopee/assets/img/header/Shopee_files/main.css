@@ -43,17 +43,12 @@
 }
 
 
-.header__nav-item-has-qr:hover .header_item-app {
-    display: block;
-}
-
 .header_item-app {
     position: absolute;
     top: 0;
     left: 0;
     padding-top: 20px;
     width: 160px;
-    display: none;
 }
 
 .header_app-qr-img {
@@ -68,11 +63,10 @@
 
 .header_app-app-icon {
     flex: 1;
-    margin: 0 5px;
 }
 
 .header_app-app-icon > img {
-    width: 100%;
+    width: 80%%;
 }
 
 .header__nav-icon-link {
