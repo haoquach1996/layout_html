@@ -1,4 +1,5 @@
 :root {
+    --primary-color: rgb(238, 75, 43);
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -28,4 +29,38 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;   
+    display: flex;
+}
+
+.model_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_body {
+    background-color: var(--white-color);
+    margin: auto;
+    position: relative;
+    z-index: 1;
 }

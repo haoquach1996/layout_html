@@ -51,11 +51,52 @@
                     </ul>
     
                     <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="" class="header__nav-item-link">
+                        <li class="header__nav-item header__nav-item-has-notify">
+                            <a href="" class="header__nav-item-link ">
                                 <i class="header_nav-icon fa-solid fa-bell"></i>
                                 Thông báo
                             </a>
+
+                            <div class="header_notify">
+                                <header class="notify_header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="notify_content-list">
+                                    <li class="notify_content-item notify_content-item--viewed">
+                                        <a href="" class="notify_content-link">
+                                            <img src="./assets/img/notify/img1.jpeg" alt="" class="notify_content-img">
+                                            <div class="notify_content-info">
+                                                <span class="notify_content-info-title">Xác thực chính hảng nguồn gốc của sản phẩm</span>
+                                                <span class="notify_content-info-disc">Xác thực chính hảng nguồn gốc của sản phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify_content-item notify_content-item--viewed">
+                                        <a href="" class="notify_content-link">
+                                            <img src="./assets/img/notify/img2.jpeg" alt="" class="notify_content-img">
+                                            <div class="notify_content-info">
+                                                <span class="notify_content-info-title"> Bộ sưu tập phiên bản giới hạn</span>
+                                                <span class="notify_content-info-disc"> Bộ sưu tập phiên bản giới hạn</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify_content-item">
+                                        <a href="" class="notify_content-link">
+                                            <img src="./assets/img/notify/img2.jpeg" alt="" class="notify_content-img">
+                                            <div class="notify_content-info">
+                                                <span class="notify_content-info-title"> Bộ sưu tập phiên bản giới hạn</span>
+                                                <span class="notify_content-info-disc"> Bộ sưu tập phiên bản giới hạn</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="notify_footer">
+                                    <a href="" class="notify_footer-link">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+
                         </li>
                         <li class="header__nav-item">
                             <a href="" class="header__nav-item-link">
@@ -80,6 +121,60 @@
         </footer>
 
     </div>
+
+    <div class="modal">
+        <div class="model_overlay"></div>
+
+        <div class="modal_body">
+            <div class="model_inner">
+
+                <!-- Authen form -->
+                <div class="auth-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-from__group">
+                            <input type="text" class="auth-from__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-from__group">
+                            <input type="password" class="auth-from__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-from__group">
+                            <input type="password" class="auth-from__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Shopee về
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="btn btn--with-icon">
+                            <i class="fab fa-facebook-square"></i>
+                            Kết nối với facebook
+                        </a>
+                        <a href="" class="btn btn--with-icon">
+                            <i class="fab fa-google"></i>
+                            Kết nối với google
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
