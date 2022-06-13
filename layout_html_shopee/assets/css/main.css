@@ -12,6 +12,7 @@
     list-style: none;
     padding-left: 0;
     margin-top: 4px;
+    display: flex;
 }
 
 .header__nav-item {
@@ -47,6 +48,10 @@
     text-decoration: none;
 }
 
+.header__nav-icon-link:nth-child(2) {
+    margin-left: 3px;
+}
+
 .header_nav-icon {
     font-size: 1.8rem;
     margin: 0 4px;
@@ -70,6 +75,78 @@
 
 .header__nav-item--strong {
     font-weight: 400;
+}
+
+.header__nav-user {
+    justify-items: center;
+    position: relative;
+}
+
+.header__nav-user:hover .header__nav-user-menu {
+    display: block;
+}
+
+.header__nav-user-img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.header__nav-user-name {
+    margin-left: 4px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.header__nav-user-menu {
+    position: absolute;
+    top: 128%;
+    right: 0;
+    list-style: none;
+    width: 160px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    padding-top: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+    box-shadow: 0 1px 2px #e0e0e0;
+    display: none;
+}
+
+.header__nav-user-menu::before {
+    content: "";
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -30px;
+    right: 10px;
+}
+
+.header__nav-user-menu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    width: 60%;
+    height: 10px;
+}
+
+.header__nav-user-item a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 8px 16px;
+    display: block;
+}
+
+.header__nav-user-item a:hover {
+    background-color: #fafafa;
+}
+
+.header__nav-user-item--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Heder QR Code */
@@ -129,8 +206,9 @@
     width: 400px;
     top: 148%;
     right: 0;
-    border: 1px solid #d3d3d3;
-    transform-origin: calc(100% - 20px) top;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotify ease-in 0.2s;
     will-change: opacity, transform;
     display: none;
@@ -384,6 +462,11 @@
     padding: 0 8px;
 }
 
+.header__logo-link {
+    text-decoration: none;
+    color: transparent;
+}
+
 .header__logo-img {
     width: 150px;
 }
@@ -446,7 +529,7 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: 128%;
+    top: calc(128% - 2px);
     width: 130px;
     list-style: none;
     box-shadow: 0 1px 2px #e0e0e0;
